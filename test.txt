@@ -1,0 +1,67 @@
+27-Feb-2019 14:40:45.961 INFO [task-thread-3] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info set search_path to 'oms','public'
+27-Feb-2019 14:40:46.100 INFO [task-thread-7] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info set search_path to 'oms','public'
+27-Feb-2019 14:40:46.165 INFO [task-thread-3] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info set search_path to 'public'
+27-Feb-2019 14:40:46.453 INFO [task-thread-7] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info set search_path to 'public'
+27-Feb-2019 14:40:46.575 INFO [task-thread-3] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info UPDATE "oms"."dw_st_line_charges" SET "header_key" = "source"."header_key", ...
+27-Feb-2019 14:40:46.795 INFO [task-thread-7] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info delete from "oms"."fact_inventory";
+27-Feb-2019 14:40:46.925 INFO [task-thread-7] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info insert into "oms"."fact_inventory" ("id", "dc_id", "item_id", "last_modified...
+27-Feb-2019 14:40:47.055 INFO [task-thread-3] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info set search_path to 'oms','public'
+27-Feb-2019 14:40:47.279 INFO [task-thread-3] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info set search_path to 'public'
+27-Feb-2019 14:40:47.545 INFO [task-thread-3] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info  INSERT INTO "oms"."dw_st_line_charges" ("line_charges_key", "header_key", "...
+[task-thread-3] INFO com.matillion.bi.emerald.server.taskrunner.transformation.tasks.ExecuteTransformationComponent -
+27-Feb-2019 14:40:48.125 WARNING [task-thread-1] com.matillion.bi.emerald.shared.model.component.impl.BaseCompWrapper.getParameter Component LINE_CHARGES_DW parameter 4 requested name Set Scalar Variables received Set Variables
+27-Feb-2019 14:40:48.125 WARNING [task-thread-1] com.matillion.bi.emerald.shared.model.component.impl.BaseCompWrapper.getParameter Component LINE_CHARGES_DW parameter 3 requested name  received Overwrite Variables
+27-Feb-2019 14:40:48.126 WARNING [task-thread-1] com.matillion.bi.emerald.shared.model.component.impl.BaseCompWrapper.getParameter Component LINE_CHARGES_DW parameter 4 requested name Set Scalar Variables received Set Variables
+[task-thread-7] INFO com.matillion.bi.emerald.server.taskrunner.transformation.tasks.ExecuteTransformationComponent -
+27-Feb-2019 14:40:48.232 INFO [task-thread-8] com.matillion.bi.emerald.component.implementation.orchestration.transactions.CommitTransaction.orchestrate COMMIT
+27-Feb-2019 14:40:48.886 INFO [task-thread-3] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info ANALYZE "oms"."fact_inventory";
+27-Feb-2019 14:40:50.197 INFO [task-thread-4] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info insert into "oms"."dw_st_line_charges" ("line_charges_key", "header_key", "l...
+27-Feb-2019 14:41:08.024 WARNING [task-thread-1] com.matillion.bi.emerald.shared.model.component.impl.BaseCompWrapper.getParameter Component OR_FACT_SA_PAGEVIEWS parameter 4 requested name Set Scalar Variables received Set Variables
+27-Feb-2019 14:41:08.025 WARNING [task-thread-1] com.matillion.bi.emerald.shared.model.component.impl.BaseCompWrapper.getParameter Component OR_FACT_SA_PAGEVIEWS parameter 4 requested name Set Scalar Variables received Set Variables
+[task-thread-4] INFO com.matillion.bi.emerald.server.taskrunner.transformation.tasks.ExecuteTransformationComponent -
+27-Feb-2019 14:41:08.319 INFO [task-thread-6] com.matillion.bi.emerald.component.implementation.orchestration.transactions.CommitTransaction.orchestrate COMMIT
+27-Feb-2019 14:41:08.581 INFO [task-thread-5] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info --DROP TABLE IF EXISTS oms.fact_sa_pageviews;  CREATE TABLE IF NOT EXISTS om...
+27-Feb-2019 14:41:09.402 INFO [task-thread-3] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info TRUNCATE "oms"."prc_st_line_charges";
+[task-thread-5] INFO com.matillion.bi.emerald.server.model.util.jdbc.JDBCQueryHelper - **** JDBCQueryHelper CACHE is being cleared!
+27-Feb-2019 14:41:12.431 INFO [task-thread-6] com.matillion.bi.emerald.component.implementation.orchestration.transactions.BeginTransaction.orchestrate BEGIN
+27-Feb-2019 14:41:12.455 WARNING [task-thread-7] com.matillion.bi.emerald.shared.model.component.impl.BaseCompWrapper.getParameter Component FACT_SA_PAGEVIEWS parameter 4 requested name Set Scalar Variables received Set Variables
+27-Feb-2019 14:41:12.455 WARNING [task-thread-7] com.matillion.bi.emerald.shared.model.component.impl.BaseCompWrapper.getParameter Component FACT_SA_PAGEVIEWS parameter 3 requested name  received Overwrite Variables
+27-Feb-2019 14:41:12.456 WARNING [task-thread-7] com.matillion.bi.emerald.shared.model.component.impl.BaseCompWrapper.getParameter Component FACT_SA_PAGEVIEWS parameter 4 requested name Set Scalar Variables received Set Variables
+27-Feb-2019 14:41:14.401 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [6E18D2F6880BAF9C6ECAD45A2B74EEB5] expired.
+27-Feb-2019 14:41:14.401 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [5D20A277590CEDCEE7B2510D349A86A3] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [BAC4E7B7F303AD5FD3BBD74B2C2981AB] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [8BCF633FA67966B710E33E760E38D380] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [664064396D05702EFDDA186D9EACC697] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [45D559DF6CF7860E0C1EA4ED90A31E0C] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [373DEF29102DCAC7D56BE02096F5754C] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [2FF5750EF5B1CA5FB91305078ED65EF4] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [94CD294453C5652812F2B3DDEBA9AD44] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [A11C40B1E75E939B1B977469203E865E] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [A08A0E9C5950A75BC87E8673E6B7C557] expired.
+27-Feb-2019 14:41:14.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [E6F749B098F3D53F4C08EE6D8E066D87] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [AEA8F7B2ADC54CFF90DBFFB57B928DE9] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [1F5F22D350C454489CA06F27E0FEC5AE] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [74C87D425FAD65E026CEBA710FA2A490] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [4B9EFA3FC36634E24CEC1DC9DFDF8B51] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [79C07750680BA801E7A15E73D851BCD2] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [B82669A6D5C7DC1714B317EFDC946FCB] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [15F0788B23E3F0301C3E93D1116A30DA] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [31CEAABC58DF467F9877BF2E03ED0DF9] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [951835910B9A3554CBD578239A922201] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [CFAC7992D207BE6CEFE93533692CAA25] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [84F565A328A34B5E529968FCE19CD815] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [BBFAFEB162B4080B99BE3CB07133D08B] expired.
+[Queue Thread] INFO com.matillion.bi.emerald.server.model.queue.sqs.StandardSQSMessageHandler - QueueRunner received message [{
+            "group":       "Data Warehouse"
+           ,"project":     "OMS"
+           ,"version":     "default"
+           ,"environment": "Production-Encrypted"
+           ,"job":         "OR_DIM_LINE_CHARGE"
+
+        }].
+27-Feb-2019 14:41:17.921 INFO [task-thread-6] com.matillion.bi.emerald.server.scripting.Javascript$EvaluationMode$2.handleException Relaxed script evaluation recieved exception [ReferenceError: "file" is not defined in <eval> at line number 1].
+27-Feb-2019 14:41:17.922 INFO [task-thread-6] com.matillion.bi.emerald.server.scripting.Javascript$EvaluationMode$2.handleException Relaxed script evaluation recieved exception [ReferenceError: "file" is not defined in <eval> at line number 1].
+27-Feb-2019 14:41:17.928 INFO [task-thread-6] com.matillion.bi.emerald.server.scripting.Javascript$EvaluationMode$2.handleException Relaxed script evaluation recieved exception [ReferenceError: "file" is not defined in <eval> at line number 1].
+27-Feb-2019 14:41:17.929 INFO [task-thread-6] com.matillion.bi.emerald.server.scripting.Javascript$EvaluationMode$2.handleException Relaxed script evaluation recieved exception [ReferenceError: "file" is not defined in <eval> at line number 1].
+27-Feb-2019 14:41:17.962 INFO [task-thread-6] com.matillion.bi.emerald.server.scripting.Javascript$EvaluationMode$2.handleException Relaxed script evaluation recieved exception [ReferenceError: "file" is not defined in <eval> at line number 1].
+27-Feb-2019 14:41:17.963 INFO [task-thread-6] com.matillion.bi.emerald.server.scripting.Javascript$EvaluationMode$2.handleException Relaxed script evaluation recieved exception [ReferenceError: "file" is not defined in <eval> at line number 1].

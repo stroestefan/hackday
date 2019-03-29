@@ -1,0 +1,30 @@
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [84F565A328A34B5E529968FCE19CD815] expired.
+27-Feb-2019 14:41:14.403 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] com.matillion.bi.emerald.server.controller.SessionListener.sessionDestroyed Session [BBFAFEB162B4080B99BE3CB07133D08B] expired.
+[Queue Thread] INFO com.matillion.bi.emerald.server.model.queue.sqs.StandardSQSMessageHandler - QueueRunner received message [{
+            "group":       "Data Warehouse"
+           ,"project":     "OMS"
+           ,"version":     "default"
+           ,"environment": "Production-Encrypted"
+           ,"job":         "OR_DIM_LINE_CHARGE"
+
+        }].
+27-Feb-2019 14:41:17.921 INFO [task-thread-6] com.matillion.bi.emerald.server.scripting.Javascript$EvaluationMode$2.handleException Relaxed script evaluation recieved exception [ReferenceError: "file" is not defined in <eval> at line number 1].
+28-Feb-2019 10:47:12.394 INFO [task-thread-169] com.matillion.bi.emerald.server.model.databasecontroller.QueryLogger.info insert into "oms"."dim_order" ("order_header_key", "date_key", "time_key", "...
+[task-thread-9] ERROR com.matillion.bi.emerald.server.redshift.jdbc.JDBCQueryToRedshiftNew - An exception occurred
+XcoreXrestX170X6632.qwc: Timeout.
+	at XcoreXrestX170X6632.ek.execute(Unknown Source)
+	at com.matillion.bi.emerald.server.model.jdbc.JDBCQuery.doQuery(JDBCQuery.java:57)
+	at com.matillion.bi.emerald.server.redshift.jdbc.JDBCQueryToRedshiftNew.doStage(JDBCQueryToRedshiftNew.java:261)
+	at com.matillion.bi.emerald.component.implementation.orchestration.PropertiesLoader.orchestrate(PropertiesLoader.java:178)
+	at com.matillion.bi.emerald.component.implementation.orchestration.cdata.AbstractCDataImplementation.orchestrate(AbstractCDataImplementation.java:833)
+	at com.matillion.bi.emerald.shared.component.implementation.contracts.Orchestratable.orchestrate(Orchestratable.java:16)
+	at com.matillion.bi.emerald.server.taskrunner.orchestration.tasks.ExecuteTask.runContextTask(ExecuteTask.java:109)
+	at com.matillion.bi.emerald.server.taskrunner.ContextTask.runTask(ContextTask.java:92)
+	at com.matillion.bi.emerald.server.taskrunner.EmeraldTask.run(EmeraldTask.java:239)
+	at com.matillion.bi.emerald.server.taskrunner.TaskThread.run(TaskThread.java:29)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[Thread-24441] INFO com.matillion.bi.emerald.server.redshift.jdbc.JDBCQueryToRedshiftNew - Interrupt called during S3 Upload.
